@@ -4,7 +4,8 @@ import logo from "../../assets/acall_logo.png";
 
 <template>
 <v-app>
-    <v-sheet
+    <div
+        id="home-sheet"
         height="10vh"
     >
         <v-row density="compact">
@@ -72,7 +73,7 @@ import logo from "../../assets/acall_logo.png";
                 </v-btn>
             </v-col>
         </v-row>
-    </v-sheet>
+    </div>
     <v-main>
         <slot/>
     </v-main>

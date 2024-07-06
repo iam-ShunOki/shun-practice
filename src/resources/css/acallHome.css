@@ -1,6 +1,11 @@
+#home-sheet {
+    z-index: 1;
+}
+
 .button {
     width: 20vw;
     height: 5vh;
+    z-index: 1;
 }
 
 /* ホームタイトル（v-col) */
@@ -11,14 +16,89 @@
 /* ホームタイトル */
 .title {
     font-size: 96px;
-    font-weight: bold;
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: start;
+    z-index: 1;
+    position: relative;
 }
 
-/* カードコンポーネント */
-.v-card-top{
-    /* &-top{ */
-        color: rgb(134, 4, 226);
-        width: 100vw;
-    /* } */
+/* ホームサブタイトル */
+.subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    margin-top: 10px;
+    z-index: 1;
+    color: rgba(94, 91, 97, 0.966)
+}
+
+/* タイトルトランジション */
+.first-title-enter-active{
+    animation: added 1s;
+}
+.second-title-enter-active{
+    animation: added 1.2s;
+}
+.third-title-enter-active{
+    animation: added 1.4s;
+}
+.subtitle-enter-active{
+    animation: added 1.6s;
+}
+
+
+@keyframes added {
+    from {
+      opacity: 0;
+      translate: 0 100px;
+    }
+    to {
+      opacity: 1;
+      translate: 0 0;
+    }
+  }
+
+/* .v-enter-to,
+.v-leave-from {
+    opacity: 1;
+} */
+
+.v-enter,
+.v-leave-to {
+    transform: translateY(100vh) translateY(0px);
+}
+
+
+
+/* ホーム背景 */
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* ホーム画面ビデオエリア */
+#video-area{
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+/* Our Visionボタン */
+#our-vision {
+    color: rgb(22, 22, 22)
 }
