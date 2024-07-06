@@ -1,0 +1,24 @@
+.button {
+    width: 20vw;
+    height: 5vh;
+}
+
+/* ホームタイトル（v-col) */
+.col-title {
+    align-content: end;
+}
+
+/* ホームタイトル */
+.title {
+    font-size: 96px;
+    font-weight: bold;
+    justify-content: start;
+}
+
+/* カードコンポーネント */
+.v-card-top{
+    /* &-top{ */
+        color: rgb(134, 4, 226);
+        width: 100vw;
+    /* } */
+}

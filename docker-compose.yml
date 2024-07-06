@@ -26,5 +26,14 @@ services:
       - ./src:/data
     # コンテナ起動後のカレントディレクトリを設定
     working_dir: /data
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8088:80
+    depends_on:
+      - db
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
 volumes:
   db-store:

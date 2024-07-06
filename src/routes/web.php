@@ -3,6 +3,9 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\YasutoController;
+use App\Http\Controllers\ThreadController;
+use App\Http\Controllers\AcallController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +36,9 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+Route::get('/welcome', [YasutoController::class, 'index']);
+
+Route::get('/thread', [ThreadController::class, 'index']);
+
+Route::get('/acall', [AcallController::class, 'index']);
