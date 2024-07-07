@@ -8,71 +8,74 @@ import logo from "../../assets/acall_logo.png";
         id="home-sheet"
         height="10vh"
     >
-        <v-row density="compact">
-            <v-col cols="1">
-                <v-img
-                    :width="200"
-                    aspect-ratio="16/9"
-                    cover
-                    :src="logo"
-                ></v-img>
-            </v-col>
-            <v-spacer></v-spacer>
-            <v-col cols="1">
-                <v-btn
-                    variant="text"
-                    block
-                    class="button font-weight-bold"
-                >
-                    Acall Ism
-                </v-btn>
-            </v-col>
-            <v-col cols="1">
-                <v-btn
-                    variant="text"
-                    block
-                    class="button font-weight-bold"
-                >
-                    About us
-                </v-btn>
-            </v-col>
-            <v-col cols="1">    
-                <v-btn
-                    variant="text"
-                    block
-                    class="button font-weight-bold"
-                >
-                    Service
-                </v-btn>
-            </v-col>
-            <v-col cols="1">
-                <v-btn
-                    variant="text"
-                    block
-                    class="button font-weight-bold"
-                >
-                    Recruit
-                </v-btn>
-            </v-col>
-            <v-col cols="1">
-                <v-btn
-                    variant="text"
-                    block
-                    class="button font-weight-bold"
-                >
-                    News
-                </v-btn>
-            </v-col>
-            <v-col cols="1">
-                <v-btn
-                    variant="text"
-                    block
-                    class="button font-weight-bold"
-                >
-                    Media
-                </v-btn>
-            </v-col>
-        </v-row>
+        <v-app-bar id="app-bar" flat>
+            <v-row density="compact">
+                <v-col cols="1">
+                    <v-img
+                        id="home-image"
+                        :width="200"
+                        aspect-ratio="16/9"
+                        cover
+                        :src="logo"
+                    ></v-img>
+                </v-col>
+                <v-spacer></v-spacer>
+                <v-col cols="1">
+                    <v-btn
+                        variant="text"
+                        block
+                        class="button font-weight-bold"
+                    >
+                        Acall Ism
+                    </v-btn>
+                </v-col>
+                <v-col cols="1">
+                    <v-btn
+                        variant="text"
+                        block
+                        class="button font-weight-bold"
+                    >
+                        About us
+                    </v-btn>
+                </v-col>
+                <v-col cols="1">    
+                    <v-btn
+                        variant="text"
+                        block
+                        class="button font-weight-bold"
+                    >
+                        Service
+                    </v-btn>
+                </v-col>
+                <v-col cols="1">
+                    <v-btn
+                        variant="text"
+                        block
+                        class="button font-weight-bold"
+                    >
+                        Recruit
+                    </v-btn>
+                </v-col>
+                <v-col cols="1">
+                    <v-btn
+                        variant="text"
+                        block
+                        class="button font-weight-bold"
+                    >
+                        News
+                    </v-btn>
+                </v-col>
+                <v-col cols="1">
+                    <v-btn
+                        variant="text"
+                        block
+                        class="button font-weight-bold"
+                    >
+                        Media
+                    </v-btn>
+                </v-col>
+            </v-row>
+        </v-app-bar>
     </div>
     <v-main>
         <slot/>

@@ -2,10 +2,22 @@
     z-index: 1;
 }
 
+#app-bar {
+    background: transparent;
+}
+
+/* ヘッダーアイコン */
+#home-image {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* ヘッダータブボタン */
 .button {
     width: 20vw;
     height: 5vh;
     z-index: 1;
+    position: relative;
 }
 
 /* ホームタイトル（v-col) */
@@ -20,6 +32,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: start;
     z-index: 1;
+    margin-left: 40px;
     position: relative;
 }
 
@@ -30,6 +43,7 @@
     font-family: sans-serif;
     position: relative;
     margin-top: 10px;
+    margin-left: 40px;
     z-index: 1;
     color: rgba(94, 91, 97, 0.966)
 }
@@ -100,5 +114,9 @@
 
 /* Our Visionボタン */
 #our-vision {
-    color: rgb(22, 22, 22)
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    height: 50px;
 }
